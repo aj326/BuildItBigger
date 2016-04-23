@@ -16,6 +16,7 @@ import io.github.jokedisplay.aj326.DisplayJoke;
  * Created by ahmed on 4/23/16.
  */
 class EndpointsAsyncTask extends AsyncTask<Context, Void, String> {
+
     private static MyApi myApiService = null;
     private Context context;
 
