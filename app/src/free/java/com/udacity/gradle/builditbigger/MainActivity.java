@@ -1,5 +1,6 @@
 package com.udacity.gradle.builditbigger;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -41,7 +42,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     private void tellJoke() {
-        new EndpointsAsyncTask().execute(this);
+        new EndpointsAsyncTask(new ProgressDialog(this)).execute(this);
     }
 
     @Override
